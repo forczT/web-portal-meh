@@ -1,0 +1,23 @@
+body{
+  background-color: #c9c9c9
+  }
+
+table{
+      border: none;
+      margin: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      background-color: none;
+      padding: 5px;
+      width: 100px;
+    }
+
+p,
+h2,
+h3,
+h4 {
+  margin: 30px;
+}
