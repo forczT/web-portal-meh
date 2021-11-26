@@ -1,0 +1,446 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header{
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 730px;
+}
+
+.header-image{
+  margin-left: 382px;
+  padding-top: 65px;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+  }
+  .map-image{
+    width: 500px;
+  }
+}
+
+.nav-bar{
+  font-family: serif;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #E8E0D8;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav-item{
+  float: left;
+  font-size: 16px;
+  color: #53546A;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+select{
+  display: inline-block;
+  border: none;
+  background: #E8E0D8;
+  font-size: 16px;
+  color: #53546A;
+}
+
+.button{
+  display: inline-block;
+}
+
+.button1{
+  font-family: Yeseva One;
+  background-color: #E8E0D8;
+  border: none;
+  color: #4A4539;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button2{
+  font-family: Yeseva One;
+  background-color: #166936;
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.buttonREAD{
+  font-family: Yeseva One;
+  background-color: #DDD7CB;
+  border: none;
+  color: #4A4539;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-bottom: 3px solid #896D4A;
+  cursor: pointer;
+  font-family: Yeseva One;
+}
+
+.buttonSIGN{
+  font-family: Yeseva One;
+  background-color: #F7F7F7;
+  border: none;
+  color: #4A4539;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-bottom: 3px solid #896D4A;
+  cursor: pointer;
+  font-family: Yeseva One;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F9F9F7
+}
+
+.row1 > div {
+  height: 365px;
+  width: 700px;
+  margin-left: 30px;
+}
+
+.row1_div1{
+  background: url(https://www.sktpetri.com/wp-content/uploads/2021/07/writing_sasha_scherg300dpi_51139799678_o-735x490.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+}
+
+.row1_text{
+  font-family: sans-serif;
+  padding-top: 50px;
+  top: 50%;
+  padding-left: 50px;
+}
+
+.row2 {
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row2 > div {
+  height: 365px;
+  width: 700px;
+  margin-left: 30px;
+}
+
+.row2_div1{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(https://www.sktpetri.com/wp-content/uploads/2021/09/Messy_bed4_Sasha_Scherg-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row2_text1{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row2_div2{
+  font-family: sans-serif;
+  color: #4C4B46;
+  background-color: #DDD7CB;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row2_div3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sktpetri.com/wp-content/uploads/2019/04/web_Skt-Petri_RAISFOTO_1148-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row2_text3{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row3 {
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row3 > div {
+  height: 365px;
+  width: 700px;
+  margin-left: 30px;
+}
+
+.row3_div1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sktpetri.com/wp-content/uploads/2021/11/IMG_1902-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row3_text1{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row3_div2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sktpetri.com/wp-content/uploads/2017/05/Room-article-img-355-x-425_0015_SktPetri_lobby_sofa-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row3_text2{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row3_div3{
+  font-family: sans-serif;
+  color: #4C4B46;
+  background-color: #DDD7CB;
+  padding-top: 70px;
+  padding-left: 30px;
+}
+
+.row4 {
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row4 > div {
+  height: 365px;
+  width: 700px;
+  margin-left: 30px;
+}
+
+.row4_div1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sktpetri.com/wp-content/uploads/2019/04/Toys_Sasha_Scherg-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row4_text1{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row4_div2{
+  font-family: sans-serif;
+  color: #4C4B46;
+  background-color: #DDD7CB;
+  padding-top: 70px;
+  padding-left: 30px;
+}
+
+.row4_div3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.sktpetri.com/wp-content/uploads/2021/07/Set_table2_Sasha_Scherg-355x425.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row4_text3{
+  font-family: sans-serif;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.row5 > div{
+  height: 200px;
+  width: 700px;
+  margin-left: 30px;
+}
+
+.row5{
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row5_div1{
+  background-color: #F7F7F7;
+}
+
+.email-box{
+  margin-left: 30px;
+}
+
+input[type="text"]{
+  width: 50%;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  }
+
+.row5_text1{
+  display: block;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #896d4a;
+  font-family: serif;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.row5_div2{
+  background-color: #F7F7F7;
+}
+
+.row5_image{
+  display: block;
+  padding-top: 70px;
+  padding-left: 25px;
+}
+
+h4{
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4a4539;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.nav-bar2{
+  font-family: serif;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #4D738A;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item2{
+  float: left;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+footer{
+  background-color: #1C1C1C;
+  padding-top: 30px;
+  padding-left: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer > div{
+  height: 365px;
+  width: 425px;
+  margin: 10px;
+}
+
+.nav-bottom{
+  width: 250px;
+  margin-top: 30px;
+}
+
+.nav-bottom a:hover{
+  border-bottom: 1px solid white;
+}
+
+.nav-item3{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-left: 90px;
+  margin-top: 10px;
+  font-family: Yeseva One;
+  font-size: 16px;
+}
+
+.map-image{
+  width: 100%;
+}
+
+.text-bottom{
+  font-family: sans-serif;
+  color: white;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+.images-bottom{
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.images-bottom-R{
+  margin-left: 230px;
+}
