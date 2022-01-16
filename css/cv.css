@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body{
+  background-color: #ddd;
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  border-bottom: 2px solid #ccffe7;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 50px;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+#nav-icon{
+  height:22px;
+  text-decoration: none;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+#nav-icon:active,
+#nav-icon:hover{
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0px 5px;
+}
+
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 25px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #ccffe7;
+}
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+
+#text{
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+}
+
+#button{
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #ddd;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.button{
+  text-decoration: none;
+}
+
+@media (max-width: 1000px){
+  nav{
+    width: 100%;
+    padding: 0 40px 0 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+  #nav-icon:active,
+  #nav-icon:hover {
+    text-decoration: none;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #ccffe7;
+  }
+}
+
+#box-title{
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.container{
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+
+.container > div{
+  border-radius: 15px;
+  border: 2px solid #ccffe7;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.container > .main-box{
+  margin-left: 300px;
+  flex: 2;
+  height: auto;
+}
+
+.container > .right-box{
+  margin-left: 20px;
+  margin-right: 300px;
+  flex: 1;
+  height: auto;
+}
+
+.cv-box{
+  height: 500px;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#box-title{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.draw {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0.8em 3em;
+  box-shadow: inset 0 0 0 2px #000000;
+  color: #000000;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.draw::before, button::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  height: 100%;
+}
+
+.draw {
+  transition: color 0.25s;
+}
+
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.draw::before {
+  top: 0;
+  left: 0;
+}
+
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+.draw:hover {
+  color: #60daaa;
+}
+
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+footer{
+  margin-top: 20px;
+  background: #1b1b1b;
+  height: auto;
+  color: white;
+}
+
+.container3{
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+
+.container3 > div{
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  width: auto;
+}
+
+.container3 > .child-left{
+  text-decoration: none;
+}
+
+.nav-item{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav-bot a:hover{
+  border-bottom: 1px solid white;
+  width: auto;
+}
+
+
+.containter3 > .child.mid{
+  text-decoration: none;
+}
+
+.terms-text{
+  text-decoration: none;
+}
+
+.terms-text:hover{
+  border-bottom: 1px solid white;
+}
