@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+      <title>Home - Web Portal</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+      <script>
+        $(function() {
+          $(".heart").on("click", function() {
+            $(this).toggleClass("heart-blast");
+          });
+        });
+      </script>
+
+   </head>
+
+   <body>
+     <nav>
+      <input type="checkbox" id="click" style="display: none">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="networking.html">Networking</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="maps.html">Map</a></li>
+        <li><a href="setting.html"><img src="images/cog.png" alt="Settings" id="nav-icon"></a></li>
+        <input type="text" id="text" placeholder="Search..." name="search" style="font-size: 14px;">
+          <button type="submit" id="button"><i class="fa fa-search"></i></button>
+        <li><a href="profile.html"><img src="images/profile-icon.png" alt="Profile" id="nav-icon"></a></li>
+      </ul>
+    </nav>
+
+    <div class="background">
+
+      <div class="welcome-box">
+        <img src="images/pfp.png" style="border-radius: 50%; height: 180px;">
+        <div class="welcome-title">
+          Welcome Back, Tanim!
+          <br>
+          Latest posts are below:
+        </div>
+        <div class="post-stuff">
+          Anything you wish to share? Post here!:
+          <br>
+          <button class="draw">Post</button>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="child-left">
+          <div class="recent-box">
+            <a id="box-title">Recent</a>
+            <div class="recent-text">
+              <p>Your friend Tanim has uploaded a <a href="#">photo.</a>
+                <br>
+                <i style="font-size: 11px;">30secs ago</i>
+              </p>
+              <p>Your friend Fatima has updated her <a href="#">profile</a>
+                <br>
+                <i style="font-size: 11px;">2hrs ago</i>
+              </p>
+              <p>Marjahan Begum replied to your <a href="#">post</a>
+                <br>
+                <i style="font-size: 11px;">7hrs ago</i>
+              </p>
+            </div>
+          </div>
+
+          <div class="news-box">
+            <a id="box-title">News</a>
+            <p>BBC website has discovered a ne... <br>
+              <a href="#">Read more...</a>
+            </p>
+            <p>Amazon Fresh has reached and su... <br>
+              <a href="#">Read more...</a>
+            </p>
+            <p>Intel to surpass AMD with proce... <br>
+              <a href="#">Read more...</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="child-middle">
+
+          <div class="mid-contents">
+            <div class="top-info">
+              <img src="images/pfp.png" style="height: 50px; border-radius: 50%;">
+              <a id="text">Tanim Posted:</a>
+              <br>
+            </div>
+            <div class="top-text">
+              Had a very fun time cloning this game!!
+            </div>
+            <div class="user-post" style="background-image: url(images/flappybird.gif);background-repeat: no-repeat;background-size: contain; background-position: center;"></div>
+            <div class="post-info">
+              <i>Posted 2mins ago</i>
+            </div>
+            <div class="user-interact">
+              <div class="heart"></div>
+              <a href="#" id="comment"></a>
+            </div>
+          </div>
+
+          <div class="mid-contents">
+            <div class="top-info">
+              <img src="images/pfp2.png" style="height: 50px; border-radius: 50%;">
+              <a id="text">Fatima Posted:</a>
+              <br>
+            </div>
+            <div class="top-text">
+              So this is the back of what a CPU looks like...interesting
+            </div>
+            <div class="user-post" style="background-image: url(https://www.techspot.com/articles-info/2000/images/2020-04-06-image-9.jpg);background-repeat: no-repeat;background-size: contain; background-position: center;"></div>
+            <div class="post-info">
+              <i>Posted 9mins ago</i>
+            </div>
+            <div class="user-interact">
+              <div class="heart"></div>
+              <a href="#" id="comment"></a>
+            </div>
+          </div>
+          <div class="mid-contents">
+            <div class="top-info">
+              <img src="images/pfp3.png" style="height: 50px; border-radius: 50%;">
+              <a id="text">Asad Posted:</a>
+              <br>
+            </div>
+            <div class="top-text">
+              Damn, how times have changed!!:
+            </div>
+            <div class="user-post" style="background-image: url(https://i.ytimg.com/vi/MGL047HMxSk/maxresdefault.jpg);background-repeat: no-repeat;background-size: contain; background-position: center;"></div>
+            <div class="post-info">
+              <i>Posted 20mins ago</i>
+            </div>
+            <div class="user-interact">
+              <div class="heart"></div>
+              <a href="#" id="comment"></a>
+            </div>
+          </div>
+
+          <div class="mid-contents">
+            <div class="top-info">
+              <img src="images/pfp4.png" style="height: 50px; border-radius: 50%;">
+              <a id="text">May Posted:</a>
+              <br>
+            </div>
+            <div class="top-text">
+              The classic iMac vs an iPhone
+            </div>
+            <div class="user-post" style="background-image: url(https://vivekgirotra.files.wordpress.com/2011/03/49b38-media_httpiimgurcomaz_cdwtw.jpg?w=614);background-repeat: no-repeat;background-size: contain; background-position: center;"></div>
+            <div class="post-info">
+              <i>Posted 2hrs ago</i>
+            </div>
+            <div class="user-interact">
+              <div class="heart"></div>
+              <a href="#" id="comment"></a>
+            </div>
+          </div>
+
+          <div class="mid-contents">
+            <div class="top-info">
+              <img src="images/pfp5.png" style="height: 50px; border-radius: 50%;">
+              <a id="text">Sudishma Posted:</a>
+              <br>
+            </div>
+            <div class="top-text">
+              no clue what I am looking at LOL!
+            </div>
+            <div class="user-post" style="background-image: url(https://cdn.arstechnica.net/wp-content/uploads/2020/11/CPU-performance-retrospective.st-full-range-640x480.png);background-repeat: no-repeat;background-size: contain; background-position: center;"></div>
+            <div class="post-info">
+              <i>Posted 8hrs ago</i>
+            </div>
+            <div class="user-interact">
+              <div class="heart"></div>
+              <a href="#" id="comment"></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="child-right">
+
+          <a id="box-title">Recent Friends</a>
+          <div class="friend-list">
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp2.png" style="height: 50px; border-radius: 50%; border: 3px solid #45ff76;">
+                <div class="friend-name">
+                  Fatima
+                </div>
+              </a>
+            </div>
+
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp3.png" style="height: 50px; border-radius: 50%; border: 3px solid #45ff76;">
+                <div class="friend-name">
+                  Asad
+                </div>
+              </a>
+            </div>
+
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp4.png" style="height: 50px; border-radius: 50%; border: 3px solid #45ff76;">
+                <div class="friend-name">
+                  May
+                </div>
+              </a>
+            </div>
+
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp5.png" style="height: 50px; border-radius: 50%; border: 3px solid #ff4545;">
+                <div class="friend-name">
+                  Sudishma
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="friend-list">
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp6.png" style="height: 50px; border-radius: 50%; border: 3px solid #ff4545;">
+                <div class="friend-name">
+                  Aman
+                </div>
+              </a>
+            </div>
+
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp7.png" style="height: 50px; border-radius: 50%; border: 3px solid #ff4545;">
+                <div class="friend-name">
+                  Asif
+                </div>
+              </a>
+            </div>
+
+            <div class="friend">
+              <a href="#">
+                <img src="images/pfp8.png" style="height: 50px; border-radius: 50%; border: 3px solid #ff4545;">
+                <div class="friend-name">
+                  Amaan
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <center><h3>Tanim<h3></center>
+    </footer>
+   </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+      <title>Settings</title>
+      <link rel="stylesheet" href="css/setting.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   </head>
+   <body>
+      <nav>
+        <input type="checkbox" id="click" style="display: none">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="networking.html">Networking</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="maps.html">Map</a></li>
+          <li><a class="active" href="setting.html"><img src="images/cog.png" alt="Settings" id="nav-icon"></a></li>
+          <input type="text" id="text" placeholder="Search..." name="search">
+            <button type="submit" id="button"><i class="fa fa-search"></i></button>
+          <li><a href="profile.html"><img src="images/profile-icon.png" alt="Profile" id="nav-icon"></a></li>
+        </ul>
+      </nav>
+    <center><h1>Settings and preferences</h1></center>
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="online places">Who can see your profile?</label>
+          </div>
+          <div class="col-75">
+            <select name="online-places" id="online-places" size="1" id="textarea">
+              <option value="Everyone">Everyone</option>
+              <option value="Friends of friends">Friends of friends</option>
+              <option value="friends only">Friends only</option>
+              <option value=" no one">no one</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="online-places">Who can see your friends?</label>
+          </div>
+          <div class="col-75">
+            <select name="online-places" id="online-places" size="1">
+              <option value="Everyone">Everyone</option>
+              <option value="Friends of friends">Friends of friends</option>
+              <option value="friends only">Friends only</option>
+              <option value=" no one">no one</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="language">Language</label>
+          </div>
+          <div class="col-75">
+            <select name="online-places" id="online-places" size="1">
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </div>
+        </div>
+        <br>
+          <div class="row">
+          <h2>Data privacy and collection:</h2>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <div class="checkboxes">
+              Agreeing to allow cookies<label><input type="checkbox"> <span><br>
+              Share data to 3rd party companies to help make your experience better<label><input type="checkbox"> <span><br>​
+              Share data to Web Portal developers to help improve the website<label><input type="checkbox"> <span><br>
+              </div>
+              <div class="row">
+                <input type="submit" value="Save">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container3">
+        <center><h3>Fatima<h3></center>
+        <div class="child-left">
+          <div class="nav-bot">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Networking</a>
+            <a href="#" class="nav-item">Careers</a>
+            <a href="#" class="nav-item">Chat</a>
+            <a href="#" class="nav-item">CV</a>
+            <a href="#" class="nav-item">Map</a>
+            <a href="#" class="nav-item">Settings</a>
+            <a href="#" class="nav-item">Profile</a>
+          </div>
+        </div>
+
+        <div class="child-mid">
+          <button class="draw" style="color: white;">Contact us here!</button>
+          <br>
+          <br>
+          <a href="https://www.city.ac.uk/"><img src="images/logo.png"></a>
+        </div>
+
+        <div class="child-right">
+          <div id="title">
+            Call us on:
+          </div>
+          +44 (0)207 040 5060
+          <br>
+          <br>
+          <div id="title">
+            Address
+          </div>
+          City, University of London
+          <br>
+          Northampton Square
+          <br>
+          London EC1V 0HB
+          <br>
+          <br>
+          <div class="terms-text">
+            <a href="#" style="color: white;">Terms and conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
